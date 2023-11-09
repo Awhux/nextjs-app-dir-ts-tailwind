@@ -1,5 +1,5 @@
 {
-  "name": "@awhux/social-network",
+  "name": "@awhux/nextjs-starter-template",
   "version": "1.0.0-beta",
   "private": true,
   "scripts": {
@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postinstall": "./postinstall",
+    "postinstall": "./postinstall.sh",
     "db:seed": "ts-node prisma/seed.ts"
   },
   "dependencies": {

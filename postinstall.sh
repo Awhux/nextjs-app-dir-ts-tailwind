@@ -10,10 +10,10 @@ if [ "$EUID" -eq 0 ]; then
 fi
 
 # If we have pnpm in the system use it, otherwise tell the user to install it
-if check_exists pnpm; then
+if command -v pnpm &> /dev/null; then
+    echo -e "${GREEN}Found pnpm in the system!${NC}"
 else
-    echo -e "${YELLOW}pnpm is not installed!${NC}"
-    echo -e "${YELLOW}Please install it with: npm i -g pnpm${NC}"
+    echo -e "${RED}Please install pnpm!${NC}"
     exit
 fi
 
