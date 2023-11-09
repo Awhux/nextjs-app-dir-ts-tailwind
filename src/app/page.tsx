@@ -1,14 +1,10 @@
-import { Button } from "@components/ui/button"
+import ClientPage from '@components/pages/index'
 
-type IndexPageProps = {}
+type ServerIndexPageProps = any
 
-const IndexPage = ({}: IndexPageProps) => {
+const IndexPage = ({}: ServerIndexPageProps) => {
   return (
-    <div>
-      <h1>Index Page</h1>
-
-      <Button>Click me</Button>
-    </div>
+    <ClientPage />
   )
 }
 
